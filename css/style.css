@@ -221,3 +221,33 @@ section {
   font-size: 0.9rem;
   opacity: 0.7;
 }
+/* =========================
+   PARALLAX DEPTH GALLERY
+========================= */
+
+.gallery-item {
+  will-change: transform;
+}
+
+.gallery-item img {
+  will-change: transform;
+  transform: scale(1.2);
+  transition: transform 0.2s linear;
+}
+/* =========================
+   HERO – ABYSS ARCHIVE
+========================= */
+
+#hero {
+  position: relative;
+}
+
+#hero img {
+  transform: scale(1.05);
+  animation: slowZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from { transform: scale(1.05); }
+  to   { transform: scale(1.15); }
+}
