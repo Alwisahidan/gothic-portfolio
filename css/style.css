@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #e0e0e0;
+}
+
+/* HERO */
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  animation: fadeDown 2s ease;
+}
+
+.subtitle {
+  color: crimson;
+  margin: 10px 0 30px;
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid crimson;
+  padding: 12px 30px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: crimson;
+}
+
+/* WORKS */
+#works {
+  padding: 80px 20px;
+}
+
+#works ul {
+  list-style: none;
+}
+
+#works li {
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+}
+
+/* CONTACT */
+#contact {
+  padding: 80px 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  background: #111;
+  border: 1px solid #333;
+  color: white;
+  padding: 10px;
+}
+
+/* ANIMATION */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}
