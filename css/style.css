@@ -89,3 +89,135 @@ input, textarea {
     font-size: 2rem;
   }
 }
+/* === GOTHIC UI UPGRADE === */
+
+body {
+  background: radial-gradient(circle at top, #111 0%, #000 65%);
+  color: #e5e5e5;
+}
+
+/* HERO DEPTH */
+#hero {
+  position: relative;
+}
+
+.title {
+  font-size: 3.5rem;
+  letter-spacing: 6px;
+  text-shadow: 0 0 20px rgba(220, 20, 60, 0.3);
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+/* SECTION SPACING */
+section {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* WORK ITEMS */
+#works li {
+  padding: 20px 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+/* === SCROLL CINEMATIC === */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1.2s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* =========================
+   CINEMATIC SCROLL REVEAL
+========================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  filter: blur(6px);
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease,
+    filter 1.2s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+/* =========================
+   GALLERY CINEMATIC MOTION
+========================= */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 1.8s ease;
+  filter: grayscale(100%) contrast(110%);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.25);
+  filter: grayscale(0%) contrast(120%);
+}
+
+/* CAPTION */
+.gallery-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.1)
+  );
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-caption h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.gallery-caption p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}

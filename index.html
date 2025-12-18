@@ -1,44 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dark Gothic Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dark Gothic Portfolio — Cinematic Archive</title>
+
+  <!-- META -->
+  <meta name="description" content="Cinematic Gothic Portfolio. Dark symbolism, modern infernal aesthetics, experimental digital art." />
+  <meta name="theme-color" content="#000000" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <!-- HERO -->
-  <section id="hero">
-    <h1 class="title">DARK CREATIVE</h1>
-    <p class="subtitle">Gothic Digital Artist</p>
-    <a href="#works" class="btn">View Works</a>
+  <!-- ================= HERO ================= -->
+  <header id="hero" class="section hero">
+    <div class="hero-inner reveal">
+      <h1 class="hero-title">
+        DARK<br />
+        ARCHIVE
+      </h1>
+      <p class="hero-subtitle">
+        Infernal Aesthetic • Cinematic Digital Art
+      </p>
+      <a href="#gallery" class="btn btn-primary">
+        Enter The Archive
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= MANIFEST ================= -->
+  <section id="manifest" class="section manifest reveal">
+    <div class="container narrow">
+      <h2 class="section-title">Manifest</h2>
+      <p class="manifest-text">
+        This archive explores shadow, rebellion, and forbidden beauty.
+        Inspired by infernal mythology, modern gothic culture,
+        and cinematic darkness — crafted with precision, restraint,
+        and elegance.
+      </p>
+    </div>
   </section>
 
-  <!-- WORKS -->
-  <section id="works">
-    <h2>Selected Works</h2>
-    <ul>
-      <li>Dark Poster Design</li>
-      <li>Gothic Web UI</li>
-      <li>Experimental Motion</li>
-    </ul>
+  <!-- ================= GALLERY ================= -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+
+      <h2 class="section-title reveal">Infernal Gallery</h2>
+
+      <div class="gallery-grid">
+
+        <article class="gallery-item reveal">
+          <img src="assets/lucifer.jpg" alt="Lucifer Concept Art">
+          <div class="gallery-caption">
+            <h3>Lucifer</h3>
+            <p>Lightbringer — Pride & Fall</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal">
+          <img src="assets/beelzebub.jpg" alt="Beelzebub Concept Art">
+          <div class="gallery-caption">
+            <h3>Beelzebub</h3>
+            <p>Decay — Power & Corruption</p>
+          </div>
+        </article>
+
+        <article class="gallery-item reveal">
+          <img src="assets/infernal.jpg" alt="Infernal Symbolism">
+          <div class="gallery-caption">
+            <h3>Infernal Symbol</h3>
+            <p>Chaos — Order Reversed</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+  <!-- ================= PHILOSOPHY ================= -->
+  <section id="philosophy" class="section philosophy reveal">
+    <div class="container narrow">
+      <h2 class="section-title">Philosophy</h2>
+      <p>
+        Darkness is not evil.
+        It is honesty without ornament.
+        Every creation here rejects trends,
+        embraces silence,
+        and moves slowly — deliberately.
+      </p>
+    </div>
   </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact reveal">
+    <div class="container narrow">
+      <h2 class="section-title">Contact</h2>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" class="btn btn-secondary">
+          Send Signal
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© 2025 Dark Archive. Crafted in Silence.</p>
+  </footer>
 
   <!-- JS -->
   <script src="js/main.js"></script>
+
 </body>
 </html>
